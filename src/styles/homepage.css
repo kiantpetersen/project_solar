@@ -1,0 +1,10 @@
+.homepage-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(#0000009d, #0000009d, #0000009d, #ffffff9d),
+    url("../images/hero_img_2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
