@@ -3,8 +3,224 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(#0000009d, #0000009d, #0000009d, #ffffff9d),
+  /* background-image: linear-gradient(
+      #144b7077,
+      #0000009d,
+      #0000009d,
+      #0000009d,
+      #0000009d,
+      #ffffff38
+    ),
     url("../images/hero_img_2.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: fit-content;
+  margin: 0 auto;
+  gap: 30px;
+}
+.hero-textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 200px;
+}
+.hero-heading {
+  font-size: 72px;
+  margin: 10px 0;
+  text-align: left;
+}
+.hero-text {
+  margin: 10px 0;
+  width: 90%;
+  font-size: 20px;
+  font-weight: 700;
+}
+.hero-btn {
+  font-size: 18px;
+  margin: 10px;
+  background-color: var(--dark-blue);
+  color: var(--light-color);
+  border: var(--dark-blue);
+}
+.hero-btn:hover {
+  color: var(--dark-color);
+  background-color: var(--light-blue);
+  /* background-color: transparent; */
+}
+.hero-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.heading-orbiter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* border: dotted 4px var(--dark-blue); */
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+}
+
+.orbiter-2 {
+  width: 500px;
+  height: 500px;
+}
+.orbiter-3 {
+  width: 600px;
+  height: 600px;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: var(--light-color);
+  animation: orbit 4s infinite linear;
+  -webkit-animation: orbit 4s infinite linear;
+}
+
+.box-2 {
+  background-color: var(--dark-blue);
+  animation: orbit-md 6s infinite linear;
+  -webkit-animation: orbit-md 6s infinite linear;
+}
+.box-3 {
+  background-color: var(--dark-blue);
+  animation: orbit-lg 5s infinite linear;
+  -webkit-animation: orbit-lg 5s infinite linear;
+}
+.box-4 {
+  background-color: red;
+  animation: eleptical 5s infinite linear;
+  -webkit-animation: eleptical 5s infinite linear;
+}
+
+@keyframes eleptical {
+  0% {
+    transform: rotate(0deg) translateY(200px) rotate(0deg);
+    -webkit-transform: rotate(0deg) translateY(200px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateY(200px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateY(200px) rotate(0deg);
+    -o-transform: rotate(0deg) translateY(200px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(200px) rotate(-360deg);
+    -webkit-transform: rotate(360deg) translateY(200px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateY(200px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateY(200px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateY(200px) rotate(-360deg);
+  }
+}
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateY(200px) rotate(0deg);
+    -webkit-transform: rotate(0deg) translateY(200px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateY(200px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateY(200px) rotate(0deg);
+    -o-transform: rotate(0deg) translateY(200px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(200px) rotate(-360deg);
+    -webkit-transform: rotate(360deg) translateY(200px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateY(200px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateY(200px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateY(200px) rotate(-360deg);
+  }
+}
+@keyframes orbit-md {
+  0% {
+    transform: rotate(0deg) translateY(250px) rotate(0deg);
+    -webkit-transform: rotate(0deg) translateY(250px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateY(250px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateY(250px) rotate(0deg);
+    -o-transform: rotate(0deg) translateY(250px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(250px) rotate(-360deg);
+    -webkit-transform: rotate(360deg) translateY(250px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateY(250px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateY(250px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateY(250px) rotate(-360deg);
+  }
+}
+@keyframes orbit-lg {
+  0% {
+    transform: rotate(0deg) translateY(300px) rotate(0deg);
+    -webkit-transform: rotate(0deg) translateY(300px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateY(300px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateY(300px) rotate(0deg);
+    -o-transform: rotate(0deg) translateY(300px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(300px) rotate(-360deg);
+    -webkit-transform: rotate(360deg) translateY(300px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateY(300px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateY(300px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateY(300px) rotate(-360deg);
+  }
+}
+
+/* /////////////////////////// *
+/* Planet List section/ */
+/* /////////////////////////// */
+/* .planets-list-section {
+} */
+.planets-container {
+  display: grid;
+}
+.planets-row {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  margin: 0 auto;
+}
+.planets-row:last-child {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  margin: 0 auto;
+}
+.planets-row:first-child {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  margin: 0 auto;
+}
+.planet-heading {
+  color: var(--light-color);
+  font-size: 38px;
+  margin: 0;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.planet-heading:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
